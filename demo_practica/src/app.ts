@@ -4,7 +4,7 @@ import { calcularPrecioFinal } from './services/precios.ts';
 export const app = express();
 app.use(express.json());
 
-app.get('/salud', (_req, res) => {
+app.get('/health', (_req, res) => {
   res.json({ estado: 'ok' });
 });
 
